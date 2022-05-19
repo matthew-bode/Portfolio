@@ -1,137 +1,228 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/Users/matthewjbode/Desktop/Codecademy/Personal Portfolio/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="/Users/matthewjbode/Desktop/Codecademy/Personal Portfolio/style.css"
+    />
     <title>Matthew's Portfolio</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <nav>
-          <h1>Matthew Bode</h1>
-            <ul class="navigation">
-                <li><a href="#about-me" class="nav-link">About</a></li>
-                <li><a href="#projects" class="nav-link">Projects</a></li>
-                <li><a href="#certifications" class="nav-link">Certifications</a></li>
-                <li><a href="#contact" class="nav-link">Contact</a></li>
-              </ul>
-        </nav>
+      <nav>
+        <h1>Matthew Bode</h1>
+        <ul class="navigation">
+          <li><a href="#about-me" class="nav-link">About</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#certifications" class="nav-link">Certifications</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
     </header>
     <main>
-        <section class="hero" id="about-me">
-              <img src="Pictures/ProfilePictureSq.jpeg" alt="A photo of Matthew Bode" class="profile-pic">
-                <div class="bio">
-                    <h2 class="bio-title">About Me</h2>
-                    <p class="bio-text">My name is Matthew Bode and I am currently seeking an entry level Software Developer position.</p>
-                    <br>
-                    <p>Since graduating college I've worked as a Data Strategist for the past 2+ years and recently decided it was time for a change. Since October of 2021 I've been taking online courses to transition my career into Software Development and Engineering.</p>
-                    <br>
-                    <p>Below you'll find some of my most recent projects I've been working on along with my skills and certifications. I am incredibly determined to continue to learn and grow in this field.</p>
+      <section class="hero" id="about-me">
+        <img
+          src="Pictures/ProfilePictureSq.jpeg"
+          alt="A photo of Matthew Bode"
+          class="profile-pic"
+        />
+        <div class="bio">
+          <h2 class="bio-title">About Me</h2>
+          <p class="bio-text">
+            My name is Matthew Bode and I am currently seeking an entry level
+            Software Developer position.
+          </p>
+          <br />
+          <p>
+            Since graduating college I've worked as a Data Strategist for the
+            past 2+ years and recently decided it was time for a change. Since
+            October of 2021 I've been taking online courses to transition my
+            career into Software Development and Engineering.
+          </p>
+          <br />
+          <p>
+            Below you'll find some of my most recent projects I've been working
+            on along with my skills and certifications. I am incredibly
+            determined to continue to learn and grow in this field.
+          </p>
+        </div>
+      </section>
+      <section class="projects" id="projects">
+        <h2 class="projects-title">Projects</h2>
+        <div class="projects-container">
+          <div class="project-container project-card">
+            <img
+              src="Pictures/ExpenseTracker(React).png"
+              alt="Project #1 Picture"
+              loading="lazy"
+              class="project-pic"
+            />
+            <h3 class="project-title">Expense Tracker (React)</h3>
+            <p class="project-details">
+              This project was built using React. You are able to add as many
+              expenses as you would like, and are each sorted by year.
+            </p>
+            <br />
+            <a href="#" target="_blank" class="project-link">View Project</a>
+          </div>
+          <div class="project-container project-card">
+            <img
+              src="Pictures/HangMan(React).png"
+              alt="Project #2 Picture"
+              loading="lazy"
+              class="project-pic"
+            />
+            <h3 class="project-title">Hang-Man (React)</h3>
+            <p class="project-details">
+              This Hang-Man project was built using React. You must guess the
+              correct missing letters. If you guess wrong, another body part
+              gets added to the man.
+            </p>
+            <a href="#" target="_blank" class="project-link">View Project</a>
+          </div>
+          <div class="project-container project-card">
+            <img
+              src="Pictures/Calculator.png"
+              alt="Project #3 Picture"
+              loading="lazy"
+              class="project-pic"
+            />
+            <h3 class="project-title">Calculator</h3>
+            <p class="project-details">
+              This project was done using HTML, CSS, and JavaScript. This is a
+              fully functioning calculator that will handle any arithmetic that
+              you input.
+            </p>
+            <a href="#../Calculator/calculator.html" target="_blank" class="project-link">View Project</a>
+          </div>
+        </div>
+      </section>
+      <section class="certifications" id="certifications">
+        <h2 class="certifications-title">Certifications</h2>
+        <table class="certifications-table">
+          <thead>
+            <tr>
+              <th class="cert-skill">Skill</th>
+              <th class="cert-location">Location</th>
+              <th class="cert-link">Certificate</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="cert-skill">Front-End Engineering</td>
+              <td class="cert-location">Codecademy</td>
+              <td class="cert-link">
+                <a class="modal-button" href="#myModal1">View Certificate</a>
+                <div id="myModal1" class="modal">
+                  <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <img src="Pictures/Cert_FrontEndEng.png" />
+                  </div>
                 </div>
-        </section>
-        <section class="projects" id="projects">
-            <h2 class="projects-title">Projects</h2>
-            <div class="projects-container">
-                <div class="project-container project-card">
-                    <img
-                    src="Pictures/ExpenseTracker(React).png"
-                    alt="Project #1 Picture"
-                    loading="lazy"
-                    class="project-pic">
-                    <h3 class="project-title">Expense Tracker (React)</h3>
-                    <p class="project-details">The is my first project.</p>
-                    <a href="#" target="_blank" class="project-link">View Project</a>
+              </td>
+            </tr>
+            <tr>
+              <td class="cert-skill">React</td>
+              <td class="cert-location">Codecademy</td>
+              <td class="cert-link">
+                <a class="modal-button" href="#myModal2">View Certificate</a>
+                <div id="myModal2" class="modal">
+                  <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <img src="Pictures/Cert_React.png" />
+                  </div>
                 </div>
-                <div class="project-container project-card">
-                    <img
-                    src="Pictures/HangMan(React).png"
-                    alt="Project #2 Picture"
-                    loading="lazy"
-                    class="project-pic">
-                    <h3 class="project-title">Hang-Man (React)</h3>
-                    <p class="project-details">The is my second project.</p>
-                    <a href="#" target="_blank" class="project-link">View Project</a>
+              </td>
+            </tr>
+            <tr>
+              <td class="cert-skill">HTML</td>
+              <td class="cert-location">Codecademy</td>
+              <td class="cert-link">
+                <a class="modal-button" href="#myModal3">View Certificate</a>
+                <div id="myModal3" class="modal">
+                  <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <img src="Pictures/Cert_HTML.png" />
+                  </div>
                 </div>
-                <div class="project-container project-card">
-                    <img
-                    src="Pictures/Calculator.png"
-                    alt="Project #3 Picture"
-                    loading="lazy"
-                    class="project-pic">
-                    <h3 class="project-title">Calculator</h3>
-                    <p class="project-details">This project was done using HTML, CSS, and JavaScript.</p>
-                    <a href="#" target="_blank" class="project-link">View Project</a>
+              </td>
+            </tr>
+            <tr>
+              <td class="cert-skill">CSS</td>
+              <td class="cert-location">Codecademy</td>
+              <td class="cert-link">
+                <a class="modal-button" href="#myModal4">View Certificate</a>
+                <div id="myModal4" class="modal">
+                  <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <img src="Pictures/Cert_CSS.png" />
+                  </div>
                 </div>
-            </div>
-        </section>
-        <section class="certifications" id="certifications">
-            <h2 class="certifications-title">Certifications</h2>
-            <table class="certifications-table">
-              <thead>
-                <tr>
-                  <th class="cert-skill">Skill</th>
-                  <th class="cert-location">Location</th>
-                  <th class="cert-link">Certificate</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                    <td class="cert-skill">Front-End Engineering</td>
-                    <td class="cert-location">Codecademy</td>
-                    <td class="cert-link"><a>View Certificate</a></td>
-                </tr>
-                <tr>
-                    <td class="cert-skill">React</td>
-                    <td class="cert-location">Codecademy</td>
-                    <td class="cert-link"><a>View Certificate</a></td>
-                </tr>
-                <tr>
-                    <td class="cert-skill">HTML</td>
-                    <td class="cert-location">Codecademy</td>
-                    <td class="cert-link"><a>View Certificate</a></td>
-                </tr>
-                <tr>
-                    <td class="cert-skill">CSS</td>
-                    <td class="cert-location">Codecademy</td>
-                    <td class="cert-link"><a>View Certificate</a></td>
-                </tr>
-                <tr>
-                    <td class="cert-skill">JavaScript</td>
-                    <td class="cert-location">Codecademy</td>
-                    <td class="cert-link"><a>View Certificate</a></td>
-                </tr>
-                <tr>
-                    <td class="cert-skill">JavaScript (Intermediate)</td>
-                    <td class="cert-location">Codecademy</td>
-                    <td class="cert-link"><a>View Certificate</a></td>
-                </tr>
-              </tbody>
-            </table>
-        </section>
-        <section class="contact" id="contact">
-            <h2 class="contact-header">Contact</h2>
-            <div class="contact-wrapper">
-                <div class="contact-images">
-                    <a href="https://www.linkedin.com/in/matthew-bode-381079138/" target="_blank"><img 
-                    src="https://www.edigitalagency.com.au/wp-content/uploads/new-linkedin-logo-white-black-png.png"
-                    alt="LinkedIn Logo"
-                    loading="lazy"
-                    class="icon"></a>
-                    <a href="https://github.com/matthew-bode" target="_blank"><img 
-                    src="https://cdn-icons-png.flaticon.com/512/25/25231.png"
-                    alt="GitHub Logo"
-                    loading="lazy"
-                    class="icon"></a>
-                    <a href="mailto: matthewjbode@yahoo.com"><img 
-                    src="https://pixy.org/download/101169/"
-                    alt="Email Logo"
-                    loading="lazy"
-                    class="icon"></a>
+              </td>
+            </tr>
+            <tr>
+              <td class="cert-skill">JavaScript</td>
+              <td class="cert-location">Codecademy</td>
+              <td class="cert-link">
+                <a class="modal-button" href="#myModal5">View Certificate</a>
+                <div id="myModal5" class="modal">
+                  <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <img src="Pictures/Cert_JavaScript.png" />
+                  </div>
                 </div>
-            </div>
-        </section>
+              </td>
+            </tr>
+            <tr>
+              <td class="cert-skill">JavaScript (Intermediate)</td>
+              <td class="cert-location">Codecademy</td>
+              <td class="cert-link">
+                <a class="modal-button" href="#myModal6">View Certificate</a>
+                <div id="myModal6" class="modal">
+                  <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <img src="Pictures/Cert_JavaScript(Int).png" />
+                  </div>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <section class="contact" id="contact">
+        <h2 class="contact-header">Contact</h2>
+        <div class="contact-wrapper">
+          <div class="contact-images">
+            <a
+              href="https://www.linkedin.com/in/matthew-bode-381079138/"
+              target="_blank"
+              ><img
+                src="https://www.edigitalagency.com.au/wp-content/uploads/new-linkedin-logo-white-black-png.png"
+                alt="LinkedIn Logo"
+                loading="lazy"
+                class="icon"
+            /></a>
+            <a href="https://github.com/matthew-bode" target="_blank"
+              ><img
+                src="https://cdn-icons-png.flaticon.com/512/25/25231.png"
+                alt="GitHub Logo"
+                loading="lazy"
+                class="icon"
+            /></a>
+            <a href="mailto: matthewjbode@yahoo.com"
+              ><img
+                src="https://pixy.org/download/101169/"
+                alt="Email Logo"
+                loading="lazy"
+                class="icon"
+            /></a>
+          </div>
+        </div>
+      </section>
     </main>
-</body>
+    <script src="app.js"></script>
+  </body>
 </html>
