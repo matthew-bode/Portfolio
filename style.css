@@ -6,7 +6,7 @@
     --bold-font: 700;
     --bolder-font: 900;
     --bg-color: #fcfcfc;
-    --primary-color: #4756df;
+    --primary-color: #1b2ed5;
     --secondary-color: #ff7235;
     --primary-shadow: #8b8eaf;
     --secondary-shadow: #a17a69;
@@ -115,6 +115,10 @@ nav ul li {
   padding: 0.3rem 0;
   font: var(--font-family);
   font-size: 14px;
+}
+
+.resume-link {
+  font-weight: var(--bold-font);
 }
 
 /* Projects Section */
