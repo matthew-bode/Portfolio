@@ -4,10 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="style.css"
-    />
+    <link rel="stylesheet" href="style.css" />
     <title>Matthew's Portfolio</title>
   </head>
   <body>
@@ -15,7 +12,14 @@
       <nav>
         <h1>Matthew Bode</h1>
         <ul class="navigation">
-          <li><a href="Pictures/Matthew_Bode_Resume_2022.pdf" target="_blank" class="nav-link">Resume</a></li>
+          <li>
+            <a
+              href="Pictures/Matthew_Bode_Resume_2022.pdf"
+              target="_blank"
+              class="nav-link"
+              >Resume</a
+            >
+          </li>
           <li><a href="#projects" class="nav-link">Projects</a></li>
           <li><a href="#certifications" class="nav-link">Certifications</a></li>
           <li><a href="#contact" class="nav-link">Contact</a></li>
@@ -62,18 +66,50 @@
         <div class="projects-container">
           <div class="project-container project-card">
             <img
-              src="Pictures/ExpenseTracker(React).png"
-              alt="Project #1 Picture"
+              src="Pictures/MealOrderingApp.png"
+              alt="Meal Ording App"
               loading="lazy"
               class="project-pic"
             />
-            <h3 class="project-title">Expense Tracker (React)</h3>
+            <h3 class="project-title">Meal Ording App</h3>
+            <p class="project-details">
+              This project showcases a meal ordering app with a fully dynamic
+              cart modal. It was built using React and utilizes concepts like
+              useEffect, useReducer, and React.createContext.
+            </p>
+            <a
+              href="https://personal-portfolio-react-99367.web.app/"
+              target="_blank"
+              class="project-link"
+              >View Project</a
+            >
+            <br />
+            <a
+              href="https://github.com/matthew-bode/Meal-Ording-App"
+              target="_blank"
+              class="project-link"
+              >View Code in GitHub</a
+            >
+          </div>
+          <div class="project-container project-card">
+            <img
+              src="Pictures/ExpenseTracker(React).png"
+              alt="Expense Tracker #1"
+              loading="lazy"
+              class="project-pic"
+            />
+            <h3 class="project-title">Expense Tracker #1</h3>
             <p class="project-details">
               This project was built using React. You are able to add as many
-              expenses as you would like, and are each sorted by year.
+              expenses as you would like, and are each sorted by year. Some main
+              focus points for this was handling state and using props.
             </p>
-            <br />
-            <a href="#" target="_blank" class="project-link">View Project</a>
+            <a
+              href="https://personal-portfolio-react-99370.web.app"
+              target="_blank"
+              class="project-link"
+              >View Project</a
+            >
             <br />
             <a
               href="https://github.com/matthew-bode/RCG_Expense_Tracker"
@@ -85,15 +121,15 @@
           <div class="project-container project-card">
             <img
               src="Pictures/HangMan(React).png"
-              alt="Project #2 Picture"
+              alt="Hang-Man"
               loading="lazy"
               class="project-pic"
             />
-            <h3 class="project-title">Hang-Man (React)</h3>
+            <h3 class="project-title">Hang-Man</h3>
             <p class="project-details">
-              This Hang-Man project was built using React. You must guess the
-              correct missing letters. If you guess wrong, another body part
-              gets added to the man.
+              This Hang-Man project was built using React and uses concepts such
+              as useEffect and handles state change. Pop-up notifications appear
+              for inccorect input and results of the game.
             </p>
             <a
               href="https://personal-portfolio-react-99368.web.app/"
@@ -109,18 +145,71 @@
               >View Code in GitHub</a
             >
           </div>
+        </div>
+        <div class="projects-container">
+          <div class="project-container project-card">
+            <img
+              src="Pictures/ExpenseTracker(2).png"
+              alt="Expense Tracker #2"
+              loading="lazy"
+              class="project-pic"
+            />
+            <h3 class="project-title">Expense Tracker #2</h3>
+            <p class="project-details">
+              This expense tracker is a more modern CSS approach using similar
+              techiques to the expense tracker #1 project.
+            </p>
+            <a
+              href="https://personal-portfolio-react-99369.web.app/"
+              target="_blank"
+              class="project-link"
+              >View Project</a
+            >
+            <br />
+            <a
+              href="https://github.com/matthew-bode/ExpenseTrackerReact"
+              target="_blank"
+              class="project-link"
+              >View Code in GitHub</a
+            >
+          </div>
+          <div class="project-container project-card">
+            <img
+              src="Pictures/GenericLoginApp.png"
+              alt="Generic Login App"
+              loading="lazy"
+              class="project-pic"
+            />
+            <h3 class="project-title">Generic Login App</h3>
+            <p class="project-details">
+              This react project showcases generic login functionality with
+              error handling for incorrect inputs.
+            </p>
+            <a
+              href="https://personal-portfolio-react-99371.web.app"
+              target="_blank"
+              class="project-link"
+              >View Project</a
+            >
+            <br />
+            <a
+              href="https://github.com/matthew-bode/Basic-Login-Project"
+              target="_blank"
+              class="project-link"
+              >View Code in GitHub</a
+            >
+          </div>
           <div class="project-container project-card">
             <img
               src="Pictures/Calculator.png"
-              alt="Project #3 Picture"
+              alt="Calculator"
               loading="lazy"
               class="project-pic"
             />
             <h3 class="project-title">Calculator</h3>
             <p class="project-details">
-              This project was done using HTML, CSS, and JavaScript. This is a
-              fully functioning calculator that will handle any arithmetic that
-              you input.
+              This project was done using HTML, CSS, and JavaScript. This fully
+              functioning calculator will handle basic arithmetic.
             </p>
             <a
               href="Calculator/calculator.html"
@@ -129,7 +218,10 @@
               >View Project</a
             >
             <br />
-            <a href="#" target="_blank" class="project-link"
+            <a
+              href="https://github.com/matthew-bode/Calculator"
+              target="_blank"
+              class="project-link"
               >View Code in GitHub</a
             >
           </div>
@@ -235,21 +327,21 @@
               href="https://www.linkedin.com/in/matthew-bode-381079138/"
               target="_blank"
               ><img
-                src="https://www.edigitalagency.com.au/wp-content/uploads/new-linkedin-logo-white-black-png.png"
+                src="Pictures/LinkedInLogo.png"
                 alt="LinkedIn Logo"
                 loading="lazy"
                 class="icon"
             /></a>
             <a href="https://github.com/matthew-bode" target="_blank"
               ><img
-                src="https://cdn-icons-png.flaticon.com/512/25/25231.png"
+                src="Pictures/GitHubLogo.png"
                 alt="GitHub Logo"
                 loading="lazy"
                 class="icon"
             /></a>
             <a href="mailto: matthewjbode@yahoo.com"
               ><img
-                src="https://pixy.org/download/101169/"
+                src="Pictures/EmailLogo.png"
                 alt="Email Logo"
                 loading="lazy"
                 class="icon"
