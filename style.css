@@ -6,7 +6,7 @@
   --bold-font: 700;
   --bolder-font: 900;
   --bg-color: #fcfcfc;
-  --primary-color: #1b2ed5;
+  --primary-color: #081bc4;
   --secondary-color: #ff7235;
   --primary-shadow: #8b8eaf;
   --secondary-shadow: #a17a69;
@@ -41,11 +41,13 @@ body {
 
 /* Navigation Bar Section */
 
-nav {
+header {
   position: sticky;
   top: 0;
-  left: 0;
   z-index: 1;
+}
+
+nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -88,6 +90,7 @@ nav ul li {
   padding-left: 10px;
   padding-right: 10px;
   padding-bottom: 2rem;
+  scroll-margin-top: 4rem;
 }
 
 .hero img {
@@ -126,6 +129,7 @@ nav ul li {
 .projects {
   background-color: var(--bg-color);
   padding: 32px 0;
+  scroll-margin-top: 4rem;
 }
 
 .project-pic {
@@ -182,6 +186,7 @@ nav ul li {
   background-color: var(--bg-color);
   padding: 32px 0;
   padding-top: 2rem;
+  scroll-margin-top: 4rem;
 }
 
 .certifications-title {
@@ -230,10 +235,10 @@ thead {
 
 .contact {
   background-color: var(--bg-color);
-
   margin: auto;
   text-align: center;
   padding-top: 2.5rem;
+  scroll-margin-top: 4rem;
 }
 
 .contact-header {
@@ -328,6 +333,7 @@ thead {
     align-items: center;
     justify-content: center;
     margin: auto;
+    scroll-margin-top: 6rem;
   }
 
   .hero img {
@@ -376,6 +382,10 @@ thead {
   nav {
     padding: 1.5rem 0.5rem;
   }
+
+  .hero {
+    scroll-margin-top: 6rem;
+  }
 }
 
 @media only screen and (max-width: 600px) {
@@ -398,5 +408,13 @@ thead {
     width: 100%;
     display: flex;
     justify-content: center;
+  }
+
+  .hero {
+    scroll-margin-top: 8rem;
+  }
+
+  .projects {
+    scroll-margin-top: 6rem;
   }
 }
